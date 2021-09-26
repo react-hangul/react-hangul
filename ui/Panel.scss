@@ -1,0 +1,47 @@
+@mixin main-panel {
+    background: #fff;
+}
+
+.panel{
+    @include main-panel;
+}
+
+.panel-up{
+    @include main-panel;
+    box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+}
+
+.panel:hover{
+    @include main-panel;
+    box-shadow: 0 10px 50px -5px rgba(51,71,91,0.12);
+}
+
+.dashboard-panel{
+    position: relative;
+    /*margin-bottom: 2.143rem;*/
+    background-color: #fff;
+    border: 0 solid transparent;
+    border-radius: .286rem;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    margin-top: 40px !important;
+    min-height: 170px;
+}
+
+.dashboard-panel-header{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+    h4{
+        margin: 6px 0px;
+        font-size: 18px;
+        color: #37474f;
+    }
+}
+
+.dashboard-panel-content{
+    padding: 20px 20px;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+
+

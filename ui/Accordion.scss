@@ -1,0 +1,31 @@
+.accordion{
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    padding:0px;
+    margin: 0px;
+}
+
+.accordion-child{
+    border-bottom: 1px solid #dedede;
+    
+}
+
+.accordion-header{
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.accordion-content{
+    padding: 15px 30px;
+    min-height: 110px;
+    display: none;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.accordion-content.active{
+    display: block;
+}

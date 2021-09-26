@@ -1,0 +1,79 @@
+.button-switch {
+    font-size: 1.0rem;
+    height: 1.875rem;
+    margin-bottom: 0.625rem;
+    position: relative;
+    width: 3.85rem;
+    display: block;
+    cursor: pointer;
+  }
+  .button-switch .lbl-off,
+  .button-switch .lbl-on {
+    cursor: pointer;
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1rem;
+    position: absolute;
+    top: 0.35rem;
+    transition: opacity 0.25s ease-out 0.1s;
+    text-transform: uppercase;
+  }
+  .button-switch .lbl-off {
+    right: 0.4375rem;
+    font-size: 0.8rem;
+  }
+  .button-switch .lbl-on {
+    color: #fefefe;
+    opacity: 0;
+    left: 0.4375rem;
+    font-size: 0.8rem;
+  }
+  .button-switch .switch {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 0;
+    font-size: 1rem;
+    left: 0;
+    line-height: 0;
+    outline: none;
+    position: absolute;
+    top: 0;
+    width: 0;
+  }
+  .button-switch .switch:before, .button-switch .switch:after {
+    content: "";
+    font-size: 1rem;
+    position: absolute;
+  }
+  .button-switch .switch:before {
+    border-radius: 1.25em;
+    background: #bdc3c7;
+    height: 1.875rem;
+    left: -0.25rem;
+    top: -0.2475rem;
+    transition: background-color 0.25s ease-out 0.1s;
+    width: 3.85rem;
+  }
+  .button-switch .switch:after {
+    box-shadow: 0 0.0625em 0.375rem 0 #666;
+    border-radius: 50%;
+    background: #fefefe;
+    height: 1.3rem;
+    transform: translate(0, 0);
+    transition: transform 0.25s ease-out 0.1s;
+    width: 1.3rem;
+  }
+  .button-switch .switch:checked:after {
+    transform: translate(2.0rem, 0);
+  }
+  .button-switch .switch:checked ~ .lbl-off {
+    opacity: 0;
+  }
+  .button-switch .switch:checked ~ .lbl-on {
+    opacity: 1;
+  }
+  .button-switch .switch#switch-blue:checked:before {
+    background: #3498db;
+  }

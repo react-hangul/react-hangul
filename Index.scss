@@ -1,0 +1,35 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background: #fafafa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-center-space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

@@ -6,3 +6,6 @@
 
 ⚡ Hangul(Kashmir Stag) is on the verge of exitinction and if you like this project or the insipiration behind it, please spread the word to create 
 awareness about this beautiful animal.
+
+
+NOTE: This is project is in a kind of pre-development phase and not yet ready for production environment.

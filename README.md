@@ -9,3 +9,7 @@ awareness about this beautiful animal.
 
 
 NOTE: This is project is in a kind of pre-development phase and not yet ready for production environment.
+
+## License
+
+The react-hangul is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

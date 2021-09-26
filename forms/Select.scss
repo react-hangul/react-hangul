@@ -1,0 +1,36 @@
+.in-select{
+    padding: 0.4375rem 1rem;
+}
+
+.in-select .in-select-options{
+    position:absolute;
+    display: none;
+}
+.in-select:hover .in-select-options{
+    display:block;
+    width:100%;
+    border: 0.0625rem solid #e4e9f2;
+    background:#fff;
+    left: 0px;
+    margin-top: 10px;
+}
+
+.in-select:hover .in-select-options .in-select-option{
+    padding: 12 8px;
+    background:#fff;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0.4375rem 1rem;
+}
+.in-select:hover .in-select-options .in-select-option:hover{
+    background-color: rgba(143, 155, 179, 0.16);
+    color: #222b45;
+}
+
+.in-select-arrow{
+    width: 25px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}

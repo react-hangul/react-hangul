@@ -1,0 +1,69 @@
+.steps{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000000d9;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+    display: flex;
+    width: 100%;
+    font-size: 0;
+    text-align: initial;
+}
+
+.step{
+    position: relative;
+    display: inline-block;
+    flex: 1;
+    overflow: hidden;
+}
+
+.step:last-child{
+    flex: none;
+}
+
+.step-container{
+    display: flex;
+    background: #fff;
+    padding: 4px 20px;
+}
+
+.step-icon{
+    width: 32px;
+    height: 32px;
+    margin: 0 8px 0 0;
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.25);
+        border-top-color: rgba(0, 0, 0, 0.25);
+        border-right-color: rgba(0, 0, 0, 0.25);
+        border-bottom-color: rgba(0, 0, 0, 0.25);
+        border-left-color: rgba(0, 0, 0, 0.25);
+    border-radius: 32px;
+    transition: background-color .3s,border-color .3s;
+}
+
+.step-text-content{
+    position: relative;
+    display: inline-block;
+    padding-right: 16px;
+    color: #000000d9;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.step-text:after{
+    position: absolute;
+    top: 16px;
+    left: 100%;
+    display: block;
+    width: 9999px;
+    height: 1px;
+    background: #f0f0f0;
+    content: "";
+}

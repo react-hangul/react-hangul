@@ -1,0 +1,108 @@
+.tooltip{
+    position: relative;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: rgba(0,0,0,.8);
+    display: inline-block;
+    margin: 10px;
+    -webkit-transition: 
+    opacity 0.2s ease-in-out,
+      visibility 0.2s ease-in-out,
+      -webkit-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -moz-transition:    
+      opacity 0.2s ease-in-out,
+      visibility 0.2s ease-in-out,
+      -moz-transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition:         
+      opacity 0.2s ease-in-out,
+      visibility 0.2s ease-in-out,
+      transform 0.2s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+}
+
+.tooltip-hover{
+    position: relative;
+}
+
+.tooltip-hover .tooltip{
+    position: absolute;
+    top: 100%;
+    margin-top: 25px;
+    opacity: 0;
+}
+
+.tooltip-hover:hover .tooltip{
+    opacity: 1;
+    -webkit-transform: translateY(-12px);
+    -moz-transform:    translateY(-12px);
+    transform:         translateY(-12px);
+}
+
+.tooltip-arrow::before{
+    content: "";
+    position: absolute;
+    color: transparent;
+    border-style: solid;
+}
+
+.tooltip.top .tooltip-arrow{
+    position: absolute;
+    display: block;
+    /*width: 4px;
+    height: 4px;*/
+    left: 50%;
+    bottom: 0;
+}
+
+.tooltip.top .tooltip-arrow::before{
+    margin-left: -2px;
+    border-width: 4px;
+    border-top-color: rgba(0,0,0,.8);
+}
+
+.tooltip.bottom .tooltip-arrow{
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+}
+
+.tooltip.bottom .tooltip-arrow::before{
+    margin-left: -2px;
+    margin-top: -8px;
+    border-width: 4px;
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+}
+
+.tooltip.left .tooltip-arrow{
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 50%;
+    left: auto;
+}
+
+.tooltip.left .tooltip-arrow::before{
+    margin-left: 0px;
+    margin-top: -4px;
+    border-width: 4px;
+    border-left-color: rgba(0, 0, 0, 0.8);
+}
+
+.tooltip.right .tooltip-arrow{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    right: auto;
+}
+
+.tooltip.right .tooltip-arrow::before{
+    margin-left: -8px;
+    margin-top: -4px;
+    border-width: 4px;
+    border-right-color: rgba(0, 0, 0, 0.8);
+}

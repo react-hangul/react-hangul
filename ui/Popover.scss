@@ -1,0 +1,82 @@
+.popover{
+    position: relative;
+    color: #fff;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+}
+
+.popover-text{
+    min-width: 270px;
+    min-height: 150px;
+    background-color: #fff;
+}
+
+.popover-arrow::before{
+    content: "";
+    position: absolute;
+    color: transparent;
+    border-style: solid;
+}
+
+.popover.top .popover-arrow{
+    position: absolute;
+    display: block;
+    /*width: 4px;
+    height: 4px;*/
+    left: 50%;
+    bottom: 0;
+}
+
+.popover.top .popover-arrow::before{
+    margin-left: -2px;
+    border-width: 8px;
+    border-top-color: #fff;
+}
+
+.popover.bottom .popover-arrow{
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+}
+
+.popover.bottom .popover-arrow::before{
+    margin-left: -2px;
+    margin-top: -16px;
+    border-width: 8px;
+    border-bottom-color: #fff;
+}
+
+.popover.left .popover-arrow{
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 50%;
+    left: auto;
+}
+
+.popover.left .popover-arrow::before{
+    margin-left: 0px;
+    margin-top: -4px;
+    border-width: 8px;
+    border-left-color: #fff;
+}
+
+.popover.right .popover-arrow{
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+    right: auto;
+}
+
+.popover.right .popover-arrow::before{
+    margin-left: -16px;
+    margin-top: -4px;
+    border-width: 8px;
+    border-right-color: #fff;
+}

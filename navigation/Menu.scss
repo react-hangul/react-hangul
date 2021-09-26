@@ -1,0 +1,136 @@
+.menu-list-group{
+    padding: 0px;
+    margin: 0px;
+    background: #fff;
+}
+
+.menu-li{
+    min-height: 40px;
+    color: #000000d9;
+    font-size: 14px;
+    padding: 0.45rem 1.25rem;
+    display: block;
+    cursor: pointer;
+}
+
+.menu-list-subgroup{
+    background: #fafafa;
+    transition: background .3s cubic-bezier(.645,.045,.355,1),padding .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.menu-list-group-child{
+    border-radius: .215rem;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 0rem;
+    border: 1px solid transparent;
+    width: 100%;
+    text-align: left;
+}
+
+.menu-list-group-child-icon{
+    margin-right: 10px;
+}
+
+.hidden {
+    height: 0px;
+    -webkit-transition: height 0.5s linear;
+       -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+         -o-transition: height 0.5s linear;
+            transition: height 0.5s linear;
+    display: block;
+    overflow: hidden;
+}
+
+.hidden.open {
+    height: auto;
+     -webkit-transition: height 0.5s linear;
+        -moz-transition: height 0.5s linear;
+         -ms-transition: height 0.5s linear;
+          -o-transition: height 0.5s linear;
+             transition: height 0.5s linear;
+}
+
+.mzz{
+    position: relative;
+}
+
+.mz{
+    display:none;
+}
+
+.mzz:hover .mz{
+    display: block;
+    position: absolute;
+    min-width: 100px;
+    background: #fff;
+    left: 77px;
+    
+    top: 0px;
+    height: 120px;
+    overflow-y: scroll;
+}
+
+/* Scrollbar Styling */
+/*
+::-webkit-scrollbar {
+    width: 7px;
+    position: absolute;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #6d6d6d; 
+}
+*/
+
+.menu, .menu-list{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.menu-list{
+    margin-left: 18px;
+    display: block;
+}
+.menu-main{
+    background: #252f3e;
+    color: rgb(17, 24, 39);
+}
+.menu-main a{
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: rgba(255, 255, 255, 0.7);
+    height: 40px;
+    margin: 0px 0px 4px;
+    border-radius: 6px;
+    padding: 12px;
+    text-decoration: none !important;
+    display:flex;
+    align-items: center;
+}
+
+.menu-main a:hover{
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.menu-child-ul{
+    display: none;
+}
+
+.menu-child-ul.active{
+    display: block;
+}
+
+.menu-list a{
+    cursor: pointer;
+}

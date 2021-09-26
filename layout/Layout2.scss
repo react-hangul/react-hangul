@@ -1,0 +1,31 @@
+.layout-2{
+    display: flex;
+    padding-top: 4rem;
+}
+
+.layout-2 > .sidebar{
+    width: 180px;
+    background: #fff;
+    height: 100vh;
+    position:fixed;
+    top:0px;
+    left: 0px;
+}
+
+.layout-2 .sidebar li{
+    list-style: none;
+
+}
+
+.layout-2 > .main-content{
+    flex:1;
+    height: 100vh;
+    margin-left: 180px;
+}
+
+.content{
+    margin: 30px 50px;
+}
+
+
+

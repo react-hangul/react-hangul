@@ -1,0 +1,33 @@
+.calendar{
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.calendar-header{
+    border-bottom: 1px solid #00000020;
+}
+
+.calendar-content{
+    padding: 8px 12px;
+    table{
+        width: 100%;
+        border: 0px solid #000;
+        tr{
+            border: 0px solid #000;
+            th,td{
+                border: 0px solid #000;
+                font-size: 12px;
+                font-weight: 600;
+                color: #000000d9;
+                padding: 3px 0px;
+                height: 24px;
+                text-transform: initial;
+            }
+        }
+    }
+}
+
+.dh-op{
+    color: #111;
+}

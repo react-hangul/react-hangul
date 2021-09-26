@@ -1,0 +1,24 @@
+.scrollable{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.scrollable.auto{
+    overflow: auto;
+}
+
+.scrollable.x{
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.scrollable.y{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.scrollable.hidden{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
